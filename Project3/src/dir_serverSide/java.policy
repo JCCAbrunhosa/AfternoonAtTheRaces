@@ -1,0 +1,9 @@
+grant
+{
+  permission java.util.PropertyPermission "user.dir", "read";
+  permission java.security.AllPermission;
+  permission java.net.SocketPermission "*", "connect,accept,listen,resolve";
+  permission java.net.SocketPermission "*:1024-65535", "listen,resolve,connect,accept";
+  permission java.net.SocketPermission "*:80", "connect";
+  permission java.io.FilePermission "/-", "read,write";
+};
